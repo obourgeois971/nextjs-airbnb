@@ -59,6 +59,8 @@ export default BookingsPage;
 
 ```sh
 npx shadcn-ui@latest init
+npx shadcn-ui@latest init
+
 
 ```
 
@@ -4897,9 +4899,7 @@ export default BookingCalendar;
 BookingCalendar.tsx
 
 ```tsx
-
 function BookingCalendar() {
-
   const { toast } = useToast();
   const unavailableDates = generateDisabledDates(blockedPeriods);
 
@@ -4918,7 +4918,6 @@ function BookingCalendar() {
     useProperty.setState({ range });
   }, [range]);
 
-
   return (
     <Calendar
       mode='range'
@@ -4932,8 +4931,6 @@ function BookingCalendar() {
   );
 }
 export default BookingCalendar;
-
-
 ```
 
 ### Fetch Bookings and Delete Booking
