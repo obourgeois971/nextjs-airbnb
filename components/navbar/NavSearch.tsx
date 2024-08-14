@@ -1,5 +1,5 @@
 function NavSearch() {
-  return (
+  return <div>NavSearch</div>;
 }
 
-export default NavSearch
+export default NavSearch;
