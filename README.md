@@ -851,6 +851,8 @@ Prisma ORM is a database toolkit that simplifies database access in web applicat
 ```sh
 npm install prisma --save-dev
 npm install @prisma/client
+besoin de la version: @prisma/client@5.12.1
+
 ```
 
 ```sh
@@ -2355,6 +2357,14 @@ export const createPropertyAction = async (
   }
   redirect('/');
 };
+```
+
+```bash
+npx prisma db push
+```
+
+```bash
+npx prisma studio
 ```
 
 ### fetchProperties
