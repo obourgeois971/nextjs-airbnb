@@ -6,21 +6,13 @@ import { SubmitButton } from '@/components/form/Buttons';
 import FormContainer from '@/components/form/FormContainer';
 import FormInput from '@/components/form/FormInput';
 import { createProfileAction } from '@/utils/actions';
+import { currentUser } from '@clerk/nextjs/server';
+import { redirect } from 'next/navigation';
 
-// const createProfileAction = async (formData: FormData) => {
-//   'use server';
-//   const firstName = formData.get('firstName') as string;
-//   console.log(firstName);
-// };
+async function CreateProfilePage() {
+  const user = await currentUser();
+  if (user?.privateMetadata?.hasProfile) redirect('/');
 
-// const createProfileAction = async (prevState: any, formData: FormData) => {
-//   'use server';
-//   const firstName = formData.get('firstName') as string;
-//   if (firstName !== 'shakeAndBake') return { message: 'there was an error...' };
-//   return { message: 'Profile Created' };
-// };
-
-function CreateProfilePage() {
   return (
     <section>
       <h1 className='text-2xl font-semibold mb-8 capitalize'>new user</h1>
