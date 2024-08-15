@@ -1050,7 +1050,7 @@ export const createProfileAction = async (
   try {
     const user = await currentUser();
     console.log(user);
-    
+
     if (!user) throw new Error('Please login to create a profile');
 
     const rawData = Object.fromEntries(formData);
@@ -1674,6 +1674,10 @@ model Property {
   profile     Profile    @relation(fields: [profileId], references: [clerkId], onDelete: Cascade)
   profileId   String
 }
+
+npx prisma db push
+npx prisma studio
+
 ```
 
 ### Property Schema
