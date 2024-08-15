@@ -1049,6 +1049,8 @@ export const createProfileAction = async (
 ) => {
   try {
     const user = await currentUser();
+    console.log(user);
+    
     if (!user) throw new Error('Please login to create a profile');
 
     const rawData = Object.fromEntries(formData);
