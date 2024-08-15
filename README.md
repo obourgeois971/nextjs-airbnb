@@ -831,6 +831,8 @@ export const createProfileAction = async (
 
 ### Supabase
 
+[Supabase](https://supabase.com/)
+
 - create account and organization
 - create project
 - setup password in .env (optional)
