@@ -3686,7 +3686,8 @@ const DynamicMap = dynamic(
     loading: () => <Skeleton className='h-[400px] w-full' />,
   }
 );
-return <DynamicMap countryCode={property.country} />;
+
+<DynamicMap countryCode={property.country} />;
 ```
 
 Lazy Loading: Components wrapped with dynamic are lazy loaded. This means that the component code is not loaded until it is needed. For example, if you have a component that is only visible when a user clicks a button, you could use dynamic to ensure that the code for that component is not loaded until the button is clicked.
