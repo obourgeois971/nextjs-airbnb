@@ -3378,7 +3378,7 @@ return (
 
 ### Calendar - Initial Setup
 
-- components/properties/booking/BookingCalendar.tsx
+- components/properties/BookingCalendar.tsx
 
 ```tsx
 'use client';
