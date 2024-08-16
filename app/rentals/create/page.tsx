@@ -26,6 +26,7 @@ function CreatePropertyPage() {
               label='Name (20 limit)'
               defaultValue='Cabin in Latvia'
             />
+
             <FormInput
               name='tagline'
               type='text '

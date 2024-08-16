@@ -2868,7 +2868,7 @@ function NavSearch() {
 export default NavSearch;
 ```
 
-### Favorites Model toto
+### Favorites Model
 
 ```prisma
 
@@ -2894,8 +2894,12 @@ model Favorite {
 }
 ```
 
-```sh
+```bash
 npx prisma db push
+```
+
+```bash
+npx prisma studio
 ```
 
 ### CardSignInButton
