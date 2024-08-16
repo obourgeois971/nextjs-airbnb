@@ -2868,7 +2868,7 @@ function NavSearch() {
 export default NavSearch;
 ```
 
-### Favorites Model
+### Favorites Model toto
 
 ```prisma
 
